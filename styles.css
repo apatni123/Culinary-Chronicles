@@ -1,0 +1,105 @@
+/* styles.css */
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f5f0;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Main header styles */
+h1 {
+    text-align: center;
+    color: #8b0000;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    text-align: center;
+    color: #8b4513;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* Section headers */
+h4, h5 {
+    color: #d2691e;
+    margin-bottom: 15px;
+}
+
+/* Ordered list styling */
+ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+ol li {
+    color: #8b4513;
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+/* Flexbox for image container */
+#images {
+    display: flex;
+    justify-content: center; /* Aligns images in the center horizontally */
+    align-items: center;     /* Centers images vertically if needed */
+    gap: 20px;               /* Adds space between the images */
+    flex-wrap: wrap;         /* Allows images to wrap on smaller screens */
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+#images img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Link styling for recipes */
+a {
+    text-decoration: none;
+    color: #8b0000;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #d2691e;
+}
+
+/* Div container styling */
+.list {
+    background-color: #fff5ee;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    #images {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+    }
+
+    #images img {
+        width: 100%;
+    }
+
+    .list {
+        padding: 15px;
+    }
+}
